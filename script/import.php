@@ -84,9 +84,9 @@ if(file_exists($argv[1])) {
         $hour = $data[2];
         $accepted = $data[3];
         $refused = $data[4];
-        // addClient($client);
-        // addDeal($deal);
-        // addTransaction($client[1], $deal[1], $hour, $accepted, $refused);
+        addClient($client);
+        addDeal($deal);
+        addTransaction($client[1], $deal[1], $hour, $accepted, $refused);
     }
     fclose($file);
 } else {
