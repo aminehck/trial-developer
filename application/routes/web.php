@@ -21,3 +21,4 @@ Route::get('/clients', 'HomeController@clients')->name('clients');
 Route::get('/deals', 'HomeController@deals')->name('deals');
 
 Route::get('/import', 'HomeController@import')->name('import');
+Route::post('/import', 'HomeController@importCsv')->name('importCsv');
